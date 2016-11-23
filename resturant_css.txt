@@ -1,0 +1,59 @@
+/* CF7 styling */
+.resturant_form input, .resturant_form textarea{width: 100%; border: 1px solid #BF8F45; padding: 10px; color:#4A4A4A; background: #ffffff;}
+.resturant_form input:focus, .resturant_form textarea:focus{outline:none; border: 1px solid #BF8F45;}
+.resturant_form .wpcf7-submit{background: none; color: #BF8F45; border: 2px solid #BF8F45; border-radius: 50px; width: 40%;   font-size: 16px; font-family: lato; float: right;}
+.resturant_form .wpcf7-submit:hover{background: #bf8f45; color: #ffffff;}
+
+/* Set min height to zero on all elementor columns */
+.elementor-column{min-height:0 !important;}
+
+/* Meet the chef section styling */
+.elementor-editor-active .chef-one .elementor-button-wrapper, .elementor-editor-active .chef-two .elementor-button-wrapper, .elementor-editor-active .chef-three .elementor-button-wrapper{top:0;}
+.chef-one .elementor-button-wrapper, .chef-two .elementor-button-wrapper, .chef-three .elementor-button-wrapper{
+  top: 300px;
+  z-index: 5; 
+  position: relative; 
+  opacity:0;
+  display:block; 
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.chef-one:hover .elementor-button-wrapper, .chef-two:hover .elementor-button-wrapper, .chef-three:hover .elementor-button-wrapper{opacity:1; -webkit-transform: translateY(-8px);  transform: translateY(-8px);}
+
+.elementor-editor-active .chef-readmore{ position: relative; z-index: 1000;}
+.elementor-editor-active .elementor-button-wrapper{opacity:1;}
+.elementor-editor-active .chef-readmore .elementor-editor-widget-settings{z-index: 1000 !important;}
+.elementor-editor-active .chef-readmore .elementor-widget-container{margin:0 !important;}
+
+
+.chef-one .chefname, .chef-two .chefname, .chef-three .chefname{
+  opacity:0;
+  display:block; 
+  vertical-align: middle;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transform-origin: left top 0;
+}
+.chef-one:hover .chefname, .chef-two:hover .chefname, .chef-three:hover .chefname{opacity:1;}
+
+/* Set Custom border radius on today's special and testimonials section */
+@media (max-width: 767px) { 
+.todayspecial .responsiveborder .elementor-column-wrap, .testimonials .responsiveborder .elementor-column-wrap{border-radius:10px !important;}
+}
